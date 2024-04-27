@@ -432,3 +432,55 @@ footer {
 footer p {
     text-align: center;
 }
+
+/*Bootstrap classes*/
+/* Style for ul with list-group class */
+ul.list-group {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Style for li with list-group-item class */
+li.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0; /* Remove default margin */
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.125); /* Add top border */
+    border-left: 0;
+    border-right: 0;
+}
+
+/* Style for li elements when hovered */
+li.list-group-item:hover {
+    z-index: 1;
+    text-decoration: none;
+}
+
+/* Style for li elements when focused */
+li.list-group-item:focus {
+    z-index: 1;
+}
+
+/* Style for li elements with active class */
+li.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Style for li elements with disabled class */
+li.list-group-item.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+}
+
+/* Style for li elements with active and disabled class */
+li.list-group-item.active.disabled {
+    color: #6c757d;
+    background-color: #007bff;
+    border-color: #007bff;
+}
